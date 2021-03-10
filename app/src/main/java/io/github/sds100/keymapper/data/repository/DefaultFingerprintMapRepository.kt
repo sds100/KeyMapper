@@ -1,10 +1,8 @@
 package io.github.sds100.keymapper.data.repository
 
 import androidx.datastore.core.DataStore
-import androidx.datastore.preferences.core.Preferences
-import androidx.datastore.preferences.core.edit
-import androidx.datastore.preferences.core.preferencesKey
-import androidx.datastore.preferences.core.remove
+import androidx.datastore.preferences.core.*
+
 import androidx.lifecycle.MutableLiveData
 import com.github.salomonbrys.kotson.fromJson
 import com.github.salomonbrys.kotson.nullInt

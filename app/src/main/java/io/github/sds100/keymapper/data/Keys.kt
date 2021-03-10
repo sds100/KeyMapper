@@ -1,7 +1,6 @@
 package io.github.sds100.keymapper.data
 
-import androidx.datastore.preferences.core.preferencesKey
-import androidx.datastore.preferences.core.preferencesSetKey
+import androidx.datastore.preferences.core.*
 
 /**
  * Created by sds100 on 19/01/21.

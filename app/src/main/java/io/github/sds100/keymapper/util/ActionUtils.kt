@@ -319,7 +319,7 @@ fun Action.canBePerformed(ctx: Context): Result<Action> {
     //the action has no data
     if (data.isEmpty()) return NoActionData()
 
-    if (requiresIME) {
+    if (!PermissionUtils.canUseShizuku(ctx) && requiresIME) {
         if (!KeyboardUtils.isCompatibleImeEnabled()) {
             return NoCompatibleImeEnabled()
         }

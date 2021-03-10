@@ -18,6 +18,7 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="moe.shizuku.manager.permission.API_V23" />
 
     <uses-permission
         android:name="android.permission.WRITE_SETTINGS"
@@ -30,6 +31,12 @@
     <uses-feature
         android:name="android.hardware.camera"
         android:required="false" />
+
+    <uses-sdk tools:overrideLibrary="rikka.shizuku.api,
+                                    rikka.shizuku.provider,
+                                    rikka.shizuku.shared,
+                                    rikka.shizuku.aidl,
+                                    org.chickenhook.restrictionbypass" />
 
     <application
         android:name=".MyApplication"
@@ -125,6 +132,19 @@
         </service>
 
         <service
+            android:name=".service.TapperAccessibilityService"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
+            android:label="@string/tap_accessibility_service_title">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/config_tap_accessibility_service" />
+        </service>
+
+        <service
             android:name=".service.KeyMapperImeService"
             android:label="@string/ime_service_label"
             android:permission="android.permission.BIND_INPUT_METHOD">
@@ -164,5 +184,13 @@
                 <action android:name="android.service.notification.NotificationListenerService" />
             </intent-filter>
         </service>
+
+        <provider
+            android:name="rikka.shizuku.ShizukuProvider"
+            android:authorities="${applicationId}.shizuku"
+            android:enabled="true"
+            android:exported="true"
+            android:multiprocess="false"
+            android:permission="android.permission.INTERACT_ACROSS_USERS_FULL" />
     </application>
 </manifest>

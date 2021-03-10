@@ -1,7 +1,6 @@
 package io.github.sds100.keymapper.util
 
-import androidx.datastore.preferences.core.preferencesKey
-import androidx.datastore.preferences.core.preferencesSetKey
+import androidx.datastore.preferences.core.*
 import androidx.preference.PreferenceDataStore
 import io.github.sds100.keymapper.data.IGlobalPreferences
 import kotlinx.coroutines.runBlocking

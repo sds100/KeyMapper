@@ -255,7 +255,7 @@ class MyAccessibilityService : AccessibilityService(),
 
         globalPreferences.keymapsPaused.collectWhenStarted(this) { paused ->
             if (paused) {
-                globalPreferences.getFlow(Keys.toggleKeyboardOnToggleKeymaps)
+                globalPreferences.getFlow<Boolean>(Keys.toggleKeyboardOnToggleKeymaps)
                     .firstBlocking()
                     .let {
                         if (it == true) {
@@ -263,7 +263,7 @@ class MyAccessibilityService : AccessibilityService(),
                         }
                     }
             } else {
-                globalPreferences.getFlow(Keys.toggleKeyboardOnToggleKeymaps)
+                globalPreferences.getFlow<Boolean>(Keys.toggleKeyboardOnToggleKeymaps)
                     .firstBlocking()
                     .let {
                         if (it == true) {
@@ -314,7 +314,7 @@ class MyAccessibilityService : AccessibilityService(),
     override fun isBluetoothDeviceConnected(address: String) = connectedBtAddresses.contains(address)
 
     override fun canActionBePerformed(action: Action): Result<Action> {
-        if (action.requiresIME) {
+        if (action.requiresIME && !PermissionUtils.canUseShizuku(this)) {
             return if (isCompatibleImeChosen) {
                 Success(action)
             } else {
@@ -391,34 +391,40 @@ class MyAccessibilityService : AccessibilityService(),
                 sendPackageBroadcast(ACTION_RECORDED_TRIGGER_KEY,
                     bundleOf(EXTRA_RECORDED_TRIGGER_KEY_EVENT to event))
 
-            is ImitateButtonPress -> when (event.keyCode) {
-                KeyEvent.KEYCODE_VOLUME_UP ->
-                    AudioUtils.adjustVolume(this, AudioManager.ADJUST_RAISE, showVolumeUi = true)
+            is ImitateButtonPress -> {
+                if (PermissionUtils.canUseShizuku(this)) {
+                    actionPerformerDelegate.performKeyActionThroughShizuku(event)
+                } else {
+                    when (event.keyCode) {
+                        KeyEvent.KEYCODE_VOLUME_UP ->
+                            AudioUtils.adjustVolume(this, AudioManager.ADJUST_RAISE, showVolumeUi = true)
 
-                KeyEvent.KEYCODE_VOLUME_DOWN ->
-                    AudioUtils.adjustVolume(this, AudioManager.ADJUST_LOWER, showVolumeUi = true)
+                        KeyEvent.KEYCODE_VOLUME_DOWN ->
+                            AudioUtils.adjustVolume(this, AudioManager.ADJUST_LOWER, showVolumeUi = true)
 
-                KeyEvent.KEYCODE_BACK -> performGlobalAction(GLOBAL_ACTION_BACK)
-                KeyEvent.KEYCODE_HOME -> performGlobalAction(GLOBAL_ACTION_HOME)
-                KeyEvent.KEYCODE_APP_SWITCH -> performGlobalAction(GLOBAL_ACTION_RECENTS)
-                KeyEvent.KEYCODE_MENU ->
-                    actionPerformerDelegate.performSystemAction(
-                        SystemAction.OPEN_MENU,
-                        chosenImePackageName,
-                        currentPackageName
-                    )
+                        KeyEvent.KEYCODE_BACK -> performGlobalAction(GLOBAL_ACTION_BACK)
+                        KeyEvent.KEYCODE_HOME -> performGlobalAction(GLOBAL_ACTION_HOME)
+                        KeyEvent.KEYCODE_APP_SWITCH -> performGlobalAction(GLOBAL_ACTION_RECENTS)
+                        KeyEvent.KEYCODE_MENU ->
+                            actionPerformerDelegate.performSystemAction(
+                                    SystemAction.OPEN_MENU,
+                                    chosenImePackageName,
+                                    currentPackageName
+                            )
 
-                else -> {
-                    chosenImePackageName?.let { imePackageName ->
-                        KeyboardUtils.inputKeyEventFromImeService(
-                            this,
-                            imePackageName = imePackageName,
-                            keyCode = event.keyCode,
-                            metaState = event.metaState,
-                            keyEventAction = event.keyEventAction,
-                            deviceId = event.deviceId,
-                            scanCode = event.scanCode
-                        )
+                        else -> {
+                            chosenImePackageName?.let { imePackageName ->
+                                KeyboardUtils.inputKeyEventFromImeService(
+                                        this,
+                                        imePackageName = imePackageName,
+                                        keyCode = event.keyCode,
+                                        metaState = event.metaState,
+                                        keyEventAction = event.keyEventAction,
+                                        deviceId = event.deviceId,
+                                        scanCode = event.scanCode
+                                )
+                            }
+                        }
                     }
                 }
             }
