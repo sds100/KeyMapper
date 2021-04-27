@@ -15,7 +15,7 @@ Key Mapper is a free and open source Android app that can map a single or multip
 
 ### How do I contribute?
 There are many ways to help this project. 😃
-Check out the contributing guide in the documentation at [](https://docs.keymapper.club).
+Check out the contributing guide in the [documentation](https://docs.keymapper.club).
 
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/M4M41032E)
 <span class="badge-paypal"><a href="https://www.paypal.com/donate?hosted_button_id=K9NBSSWJY9TVY" title="Donate to this project using Paypal"><img src="https://img.shields.io/badge/paypal-donate-blue.svg" alt="PayPal donate button" /></a></span>
