@@ -14,7 +14,7 @@
       
       
       <link rel="icon" href="../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.2">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.3">
     
     
       
@@ -22,7 +22,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.6f955dcd.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.e35208c4.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.ef6f36e2.min.css">
@@ -415,9 +415,70 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#introduction-to-the-structure" class="md-nav__link">
+    Introduction to the structure
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction to the structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#architecture" class="md-nav__link">
+    Architecture
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#package-by-feature" class="md-nav__link">
+    Package by feature
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-up-the-environment" class="md-nav__link">
+    Setting up the environment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#branches" class="md-nav__link">
+    Branches 🌴
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#committing" class="md-nav__link">
     Committing
   </a>
+  
+    <nav class="md-nav" aria-label="Committing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#types" class="md-nav__link">
+    Types
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -442,7 +503,7 @@
       
         <li class="md-nav__item">
   <a href="#translating" class="md-nav__link">
-    Translating
+    Translating 🌍
   </a>
   
 </li>
@@ -590,9 +651,70 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#introduction-to-the-structure" class="md-nav__link">
+    Introduction to the structure
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction to the structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#architecture" class="md-nav__link">
+    Architecture
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#package-by-feature" class="md-nav__link">
+    Package by feature
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-up-the-environment" class="md-nav__link">
+    Setting up the environment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#branches" class="md-nav__link">
+    Branches 🌴
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#committing" class="md-nav__link">
     Committing
   </a>
+  
+    <nav class="md-nav" aria-label="Committing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#types" class="md-nav__link">
+    Types
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -617,7 +739,7 @@
       
         <li class="md-nav__item">
   <a href="#translating" class="md-nav__link">
-    Translating
+    Translating 🌍
   </a>
   
 </li>
@@ -719,11 +841,80 @@
 <li>If you find any bugs or crashes then report them by following the guide <a href="../report-issues/">here</a>.</li>
 </ul>
 <h2 id="contributing-code">Contributing code<a class="headerlink" href="#contributing-code" title="Permanent link">&para;</a></h2>
+<h3 id="introduction-to-the-structure">Introduction to the structure<a class="headerlink" href="#introduction-to-the-structure" title="Permanent link">&para;</a></h3>
+<p>This app follows Clean Architecture and package-by-feature.</p>
+<h4 id="architecture">Architecture<a class="headerlink" href="#architecture" title="Permanent link">&para;</a></h4>
+<p>All data structures that are persisted are passed around as one of two objects:</p>
+<ol>
+<li>
+<p><strong>Non-Entity</strong>. This models the data in a way that makes the code more readable and doing the business logic easier. There are no rules for how these need to be named. They should be named what they are. E.g KeyMap, Action, Constraint.</p>
+</li>
+<li>
+<p><strong>Entity</strong>. This models how the data should be stored. The class name has an ...Entity suffix. E.g KeyMapEntity. The data is more optimised for storing and the code required to get the data from these models isn't very concise or elegant. The developer took some strange decisions in the first versions of this app. 😆</p>
+</li>
+</ol>
+<p>Every screen in the app has a view model and the view model interacts   with one or multiple <em>use cases</em> (more below). The view model converts data that needs to be shown to the user into something that can populate the user interface. For example, the data values in the Action object isn't very useful to the user so this needs to be converted into strings and images that do mean something to the user. All the view models have a ResourceProvider dependency which is how they get strings, Drawables and colours from the resources without having to use a Context. This isn't a problem for configuration changes (e.g locale change) because the activity is recreated, which means all the resources are re-fetched in the view model.</p>
+<p>The use cases contains all the business logic in the app. A <em>use case</em>  interacts with the adapters and repositories mentioned below. A use case is made for everything that can be done in the app. E.g configuring a key map, displaying a mapping, configuring settings, onboarding the user. Most use cases correspond to something that <em>the user can do</em> in the app but some do not because they contain complicated code that is used in multiple use cases. E.g the GetActionErrorUseCase which determines if an action can be performed successfully.</p>
+<p>Adapters and repositories contain all interactions with the Android framework (except UI stuff). This is so that tests can be more easily written and executed. Android often changes what apps are allowed to do and how so abstracting these interactions away means the code only needs to be changed in a single place. This means that the only place that a Context object is used is in Services, Activities, Fragments and the adapters.</p>
+<h4 id="package-by-feature">Package by feature<a class="headerlink" href="#package-by-feature" title="Permanent link">&para;</a></h4>
+<p>Every package contains files related to each other. For example, everything (view models, fragments, use cases) to do with constraints is stored in one package.
+The only package which isn't a feature is the <code>data</code> package because it is useful to have some of the things in there together, e.g the migrations.
+The <code>system</code> package bundles all the packages which are related to the Android framework because there are so many.</p>
+<p><img alt="contributing-app-structure" src="../images/contributing-app-structure.png" /></p>
+<h3 id="setting-up-the-environment">Setting up the environment<a class="headerlink" href="#setting-up-the-environment" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Fork the KeyMapper repository (repo).</li>
+<li>Clone the repo to your device. It will clone to a folder called KeyMapper by default.</li>
+<li><a href="https://developer.android.com/studio/install">Install</a> Android Studio if you don't have it already. It is available for Windows, Linux and macOS.</li>
+<li>Open the cloned KeyMapper folder in Android Studio. Install anything Android Studio prompts you to install. E.g the gradle wrapper version used by KeyMapper or older Android SDK versions.</li>
+<li>Create a new branch off develop which begins with "feature/" if it is a new feature or "fix/" if it is a bug fix. Then put a brief description of the feature/bug fix.</li>
+<li>Make any changes then commit them to your forked repo then make a pull request!</li>
+</ol>
+<h3 id="branches">Branches 🌴<a class="headerlink" href="#branches" title="Permanent link">&para;</a></h3>
+<ul>
+<li>master: Everything in the latest stable release.</li>
+<li>
+<p>develop: The most recent changes. The app is potentially unstable but it can be successfully compiled. Merges into a release branch when enough has been changed for a new release.</p>
+</li>
+<li>
+<p>release/*: Branched off develop. Beta releases for a particular release are compiled from here. Once the code is stable, it will be merged into master. No big changes should be made/merged here as the purpose of this branch is to make a release stable. By separating upcoming releases from develop, new features can be worked on in develop without affecting the upcoming release's code base.</p>
+</li>
+<li>feature/*: Any new changes currently being developed. Merges into develop.</li>
+<li>hotfix/*: Any small, quick (atleast things which SHOULD be quick) changes that need to be made. Merge into develop and release. If there is no release already being worked on, quickly release a new version depending on how critical the issue is and merge the new release branch into master.</li>
+</ul>
 <h3 id="committing">Committing<a class="headerlink" href="#committing" title="Permanent link">&para;</a></h3>
+<p>Format:
+<div class="highlight"><pre><span></span><code>&lt;issue id&gt; &lt;type&gt;: &lt;subject&gt;
+</code></pre></div></p>
+<p>Every feature or bug fix commit should have an issue associated with it. This is a cue for the developer to plan what they are doing which improves efficiency. A feature should be split up into multiple tasks and each task should have its own commit. The feature should be developed on a separate branch and then merged into develop.</p>
+<h4 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>#100 feat: This a new feature
+</code></pre></div>
+<h4 id="types">Types<a class="headerlink" href="#types" title="Permanent link">&para;</a></h4>
+<ul>
+<li>feat: a new feature</li>
+<li>fix: a bug fix</li>
+<li>docs: changes to documentation</li>
+<li>style: formatting, missing semi colons, etc; no code change</li>
+<li>refactor: refactoring production code</li>
+<li>test: adding tests, refactoring test; no production code change</li>
+<li>chore: updating build tasks, package manager configs, version name changes, etc; no production code change</li>
+<li>release: a new release.</li>
+<li>website: stuff to do with the website.</li>
+</ul>
+<p>The README, License, Credits, Changelog and Privacy Policy files should just be changed in the master branch.</p>
 <h3 id="versioning">Versioning<a class="headerlink" href="#versioning" title="Permanent link">&para;</a></h3>
+<p>This project uses semantic versioning. e.g 1.2.3-alpha.1</p>
+<ul>
+<li>1st digit: major release. Only incremented when a big enough change happens to the project.</li>
+<li>2nd digit: minor releases. Incremented when a new feature or a few are added.</li>
+<li>3rd digit: patches. Incrememtend after a hotfix or bug fix.</li>
+</ul>
+<p>Additional labels can be used as a suffix. e.g "alpha".</p>
+<p>The version code in the develop branch should always be the highest. Therefore, when a new version is released in the release branch, it should be incremented as well.</p>
 <h3 id="code-style">Code Style<a class="headerlink" href="#code-style" title="Permanent link">&para;</a></h3>
 <p>Follow Google's Kotlin style guide. <a href="https://developer.android.com/kotlin/style-guide">https://developer.android.com/kotlin/style-guide</a></p>
-<h2 id="translating">Translating<a class="headerlink" href="#translating" title="Permanent link">&para;</a></h2>
+<h2 id="translating">Translating 🌍<a class="headerlink" href="#translating" title="Permanent link">&para;</a></h2>
 <p>You can translate this project on the <a href="https://crowdin.com/project/key-mapper">CrowdIn page</a>. Translations will be merged into production once 70% of the language has been translated. This is to improve the user experience. If your language isn't available on the CrowdIn page then contact the developer so we can add it. Our contact details are in the footer of every page on this site.</p>
 <p>We really appreciate translators so thank you! 🙂</p>
 <h2 id="consistency-standards">Consistency Standards<a class="headerlink" href="#consistency-standards" title="Permanent link">&para;</a></h2>
