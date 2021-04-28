@@ -8,7 +8,7 @@ assignees: sds100
 ---
 
 **Developer TODO (don't remove)**
-- [ ] create new branch. put issue number at start of name
+- [ ] create new branch. put issue number at start of name if not a very quick fix.
 - [ ] write tests. put issue number in comment
 - [ ] update documentation
 - [ ] squash and merge
