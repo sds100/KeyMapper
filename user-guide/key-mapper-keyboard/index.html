@@ -18,7 +18,7 @@
     
     
       
-        <title>ADB Permissions - Key Mapper Documentation</title>
+        <title>Setup a Key Mapper keyboard - Key Mapper Documentation</title>
       
     
     
@@ -64,11 +64,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#prepare-adb-android-debug-bridge" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -94,7 +89,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ADB Permissions
+              Setup a Key Mapper keyboard
             
           </span>
         </div>
@@ -337,6 +332,18 @@
             
   
   
+  
+    <li class="md-nav__item">
+      <a href="../adb-permissions/" class="md-nav__link">
+        ADB Permissions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
     
   
   
@@ -346,64 +353,10 @@
       
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          ADB Permissions
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
-        ADB Permissions
-      </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#prepare-adb-android-debug-bridge" class="md-nav__link">
-    Prepare ADB (Android Debug Bridge)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#write_secure_settings" class="md-nav__link">
-    WRITE_SECURE_SETTINGS
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#enabling-the-accessibility-service" class="md-nav__link">
-    Enabling the Accessibility Service
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../key-mapper-keyboard/" class="md-nav__link">
         Setup a Key Mapper keyboard
       </a>
+      
     </li>
   
 
@@ -466,117 +419,30 @@
               </div>
             
             
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#prepare-adb-android-debug-bridge" class="md-nav__link">
-    Prepare ADB (Android Debug Bridge)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#write_secure_settings" class="md-nav__link">
-    WRITE_SECURE_SETTINGS
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#enabling-the-accessibility-service" class="md-nav__link">
-    Enabling the Accessibility Service
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/sds100/KeyMapper/edit/master/docs/user-guide/adb-permissions.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/sds100/KeyMapper/edit/master/docs/user-guide/key-mapper-keyboard.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>ADB Permissions</h1>
+                  <h1>Setup a Key Mapper keyboard</h1>
                 
-                <p>If your device is <strong>rooted</strong>, Key Mapper can grant itself these permissions by enabling the "Key Mapper has root permissions" toggle in the settings.</p>
-<p>If your device is <strong>not rooted</strong> you must do the following.</p>
-<h2 id="prepare-adb-android-debug-bridge">Prepare ADB (Android Debug Bridge)<a class="headerlink" href="#prepare-adb-android-debug-bridge" title="Permanent link">&para;</a></h2>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>You might need to attempt this process multiple times because it can be flaky.</p>
-</div>
+                <p>On Android the on-screen keyboard that you see when you want to type something is called an 'input method'. Key Mapper uses its own input methods so that it can type stuff or press buttons for you in other apps. You <strong>can not</strong> use the input method that you are usually using (E.g Gboard or Samsung Keyboard) when you are using some features in Key Mapper (e.g key code actions) since Android only allows one input method to be used at a time.</p>
+<p><strong>'A Key Mapper keyboard'</strong> through out this documentation and the app refers to any input method that works with Key Mapper. There are <strong>only 2</strong> right now.</p>
 <ol>
 <li>
-<p>Enable developer options on your device by going to device Settings -&gt; 'About Phone' and tapping 'Build Number' many times until it says you've enabled developer options. The location of the Build Number may vary between devices.</p>
-<details class="info"><summary>Screenshot</summary><p><img alt="" src="../../images/android-about-phone.png" /></p>
-</details>
+<p>The one built-in to Key Mapper is called the "Key Mapper Basic Input Method". This one has <strong>NO</strong> on-screen keyboard. You won't see a keyboard when you want to type something. This keyboard doesn't support non-English languages! You are not recommended to use this since it is not a proper keyboard.</p>
 </li>
 <li>
-<p>Enable USB Debugging in developer options and plug your device into your PC.</p>
-<details class="info"><summary>Screenshot</summary><p><img alt="" src="../../images/android-developer-options-usb-debugging.png" /></p>
-</details>
-</li>
-<li>
-<p>Download the <a href="https://developer.android.com/studio/releases/platform-tools.html">Android SDK platform tools</a> from here and unzip it.</p>
-</li>
-<li>
-<p>Open a terminal/command prompt in the unzipped folder.</p>
-</li>
-<li>
-<p>Type or paste in a terminal: <code>adb devices</code> and your device then click the prompt on your phone to allow USB debugging from your PC.</p>
-<details class="info"><summary>Prompt on phone</summary><p><img alt="" src="../../images/android-allow-usb-debugging-dialog.png" /></p>
-</details>
-</li>
-<li>
-<p>Type <code>adb devices</code> again and make sure you see the correct output as shown below.</p>
-<details class="success"><summary>Correct command prompt output</summary><p><img alt="" src="../../images/command-prompt-adb-devices-success.png" /></p>
-</details>
-<details class="failure"><summary>Incorrect command prompt outputs</summary><p><img alt="" src="../../images/command-prompt-adb-devices-no-devices.png" />
-<img alt="" src="../../images/command-prompt-adb-devices-offline.png" />
-<img alt="" src="../../images/command-prompt-adb-devices-unauthorized.png" /></p>
-</details>
+<p>If you want an on-screen keyboard to be available while using Key Mapper or if you need support for non-English languages, you need to install "Key Mapper GUI Keyboard". It is available on the <a href="http://gui.keymapper.club">Google Play Store</a>, <a href="https://www.f-droid.org/en/packages/io.github.sds100.keymapper.inputmethod.latin/">F-Droid</a> and <a href="https://github.com/sds100/KeyMapperKeyboard/releases">GitHub.</a> This is the recommended input method for Key Mapper.</p>
 </li>
 </ol>
-<h2 id="write_secure_settings">WRITE_SECURE_SETTINGS<a class="headerlink" href="#write_secure_settings" title="Permanent link">&para;</a></h2>
-<p>If you need more features of Key Mapper, you may grant the app permission to modify the secure settings on your device.</p>
-<p>Type or paste in a terminal:</p>
-<div class="highlight"><pre><span></span><code>adb shell pm grant io.github.sds100.keymapper android.permission.WRITE_SECURE_SETTINGS
-</code></pre></div>
-<div class="admonition attention">
-<p class="admonition-title">Attention</p>
-<p>For CI builds (the app icon with a green square) the package name is <code>io.github.sds100.keymapper.ci</code>.
-For Debug builds (the app icon with a yellow square) the package name is <code>io.github.sds100.keymapper.debug</code>.</p>
-</div>
-<p>More features which rely on this set of permission will come in the future. These permissions persist across reboots but need to be granted again if the app is reinstalled.</p>
-<h2 id="enabling-the-accessibility-service">Enabling the Accessibility Service<a class="headerlink" href="#enabling-the-accessibility-service" title="Permanent link">&para;</a></h2>
-<p>You may wish to enable Key Mapper's accessibility service using ADB if you cannot do so in-app due to manufacturer constraints.</p>
-<p>To add Key Mapper to the List of the enabled accessibility providers, type or paste in a terminal:</p>
-<div class="highlight"><pre><span></span><code>adb shell settings put secure enabled_accessibility_services io.github.sds100.keymapper/io.github.sds100.keymapper.service.MyAccessibilityService
-</code></pre></div>
+<p><strong>'Enable a Key Mapper keyboard'</strong> means turning on the input method in your device's 'Language &amp; Input' settings. The location of these settings is often called something else.</p>
+<p><strong>'Use/choose a Key Mapper keyboard'</strong> means making the Key Mapper keyboard that you have installed the one that shows up when you want to type something. Multiple ways of doing this are described <a href="faq.md#how-do-i-change-the-keyboard">here</a>. Android allows multiple input methods to be <em>enabled</em> but only <em>one</em> to be used at a time.</p>
                 
               
               
@@ -595,7 +461,7 @@ For Debug builds (the app icon with a yellow square) the package name is <code>i
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../backup-restore/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../adb-permissions/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -604,19 +470,19 @@ For Debug builds (the app icon with a yellow square) the package name is <code>i
               <span class="md-footer__direction">
                 Previous
               </span>
-              Back up and Restore (2.1.0+, Android 4.4+)
+              ADB Permissions
             </div>
           </div>
         </a>
       
       
-        <a href="../key-mapper-keyboard/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../../contributing/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Setup a Key Mapper keyboard
+              Contributing
             </div>
           </div>
           <div class="md-footer__button md-icon">
