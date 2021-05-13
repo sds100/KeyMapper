@@ -14,6 +14,7 @@ nav:
       - Settings: user-guide/settings.md
       - Back up and Restore (2.1.0+, Android 4.4+): user-guide/backup-restore.md
       - ADB Permissions: user-guide/adb-permissions.md
+      - Setup a Key Mapper keyboard: user-guide/key-mapper-keyboard.md
   - Contributing: contributing.md
   - Report Issues: report-issues.md
   - Known Issues: known-issues.md
