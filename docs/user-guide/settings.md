@@ -73,7 +73,7 @@ Steps to work around this bug...
     - Can I use a non Key Mapper keyboard like Gboard instead? No because Key Mapper isn't allowed to tell other input methods what to type.
     - Can I add support for joysticks and triggers? No because Android doesn't allow apps to input motion events to other apps.
 
-## Logging
+## Logging (2.3.0+)
 
 This can be very useful for debugging and can be used instead of a bug report. Read about how to send this information to the developer [here](../report-issues.md).
 
@@ -85,7 +85,6 @@ This can be very useful for debugging and can be used instead of a bug report. R
 There are buttons to...
 
 - Copy the log to the clipboard.
-
- - Save the log to a file.
- - Clear the log.
- - Toggle short messages on and off. This only affects the logging screen in the app and doesn't affect how the log is copied or saved.
+- Save the log to a file.
+- Clear the log.
+- Toggle short messages on and off. This only affects the logging screen in the app and doesn't affect how the log is copied or saved.
