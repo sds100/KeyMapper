@@ -75,10 +75,10 @@ Steps to work around this bug...
 
 ## Logging (2.3.0+)
 
-This can be very useful for debugging and can be used instead of a bug report. Read about how to send this information to the developer [here](../report-issues.md). App crashes always save to the log regardless of whether this option is turned on.
+This is very useful for debugging and can be used instead of a bug report. Read about how to send this information to the developer [here](../report-issues.md). Some things like app crashes always save to the log regardless of whether extra logging is turned on.
 
 !!! warning
-    This should only be turned on if you are trying to fix an issue or have been told to by the developer otherwise Key Mapper will use more storage space and your key maps might have higher latency. Turn this off once you have fixed the issue or have gathered the information that you need.
+    Extra logging should only be turned on if you are trying to fix an issue or have been told to by the developer otherwise Key Mapper will use more storage space and your key maps might have higher latency. Turn this off once you have fixed the issue or have gathered the information that you need.
 
 ![](../images/settings-logging-screen.png)
 
