@@ -8,6 +8,7 @@ There are many ways to report an issue to the developer. You must attach the fol
         You must first turn on the Key Mapper setting to 'Enable logging' and then make your issue happen again. Only after your issue has happened again should you continue to copy or attach the log to your report.
 
 - The **whole** Key Mapper version name. This can be found at the top of the About screen in the app. You can navigate to the About screen by opening the menu in the Key Mapper home screen.
+- A backup of all your mappings. There is a button in the Key Mapper home-screen menu to backup everything.
 - Your device name and manufacturer.
 - Your device's Android version which can be found in 'About phone' or 'Software information' in your device's settings.
 - A description of the issue.
