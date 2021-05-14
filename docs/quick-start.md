@@ -63,7 +63,7 @@ Key Mapper can also remap fingerprint gestures on many devices. You can learn ho
 
 You should see this screen after pressing volume down.
 
-### ![](images/config-keymap-trigger-dnd-error.png)
+![](images/config-keymap-trigger-dnd-error.png)
 
 ### Setup the ability to properly remap volume buttons
 
