@@ -57,8 +57,7 @@ This setting needs to be turned on for some features in Key Mapper to work. You 
 Steps to work around this bug...
 
 1. Enable the Key Mapper accessibility service.
-2. 
- --8<-- "go-to-settings.md"
+2. --8<-- "go-to-settings.md"
 
 3. Scroll down to the 'Workaround for Android 11 bug that sets the device id for input events to -1' setting and turn it on.
 4. **To avoid confusion and headaches** read about how input methods work with Key Mapper [here](key-mapper-keyboard.md).
@@ -73,3 +72,20 @@ Steps to work around this bug...
 !!! faq
     - Can I use a non Key Mapper keyboard like Gboard instead? No because Key Mapper isn't allowed to tell other input methods what to type.
     - Can I add support for joysticks and triggers? No because Android doesn't allow apps to input motion events to other apps.
+
+## Logging
+
+This can be very useful for debugging and can be used instead of a bug report. Read about how to send this information to the developer [here](../report-issues.md).
+
+!!! warning
+    This should only be turned on if you are trying to fix an issue or have been told to by the developer otherwise Key Mapper will use more storage space and your key maps might have higher latency. Turn this off once you have fixed the issue or have gathered the information that you need.
+
+![](../images/settings-logging-screen.png)
+
+There are buttons to...
+
+- Copy the log to the clipboard.
+
+ - Save the log to a file.
+ - Clear the log.
+ - Toggle short messages on and off. This only affects the logging screen in the app and doesn't affect how the log is copied or saved.
