@@ -25,8 +25,6 @@ This is a useful notification so you can easily pause and resume your key maps.
 
 These settings allow you to change the defaults for these key map options. For example if the 'long press delay' for a key map is set to 'default' changing this setting will affect that key map.
 
-##
-
 ## Automatically change the on-screen keyboard when a device connects/disconnects
 
 !!! attention
