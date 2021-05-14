@@ -25,6 +25,8 @@ This is a useful notification so you can easily pause and resume your key maps.
 
 These settings allow you to change the defaults for these key map options. For example if the 'long press delay' for a key map is set to 'default' changing this setting will affect that key map.
 
+##
+
 ## Automatically change the on-screen keyboard when a device connects/disconnects
 
 !!! attention
@@ -48,6 +50,8 @@ The last used Key Mapper keyboard will be automatically selected when you unpaus
     You must [grant Key Mapper WRITE_SECURE_SETTINGS permission](../adb-permissions/#write_secure_settings) for this to notification to be shown. Alternatively on Android 11+ you can just turn on the accessibility service.
 
 This notification will select the last used Key Mapper keyboard if you are using your normal keyboard and will select your normal keyboard if the Key Mapper keyboard is being used.
+
+![](../images/notification-toggle-keyboard.png)
 
 ## Automatically show keyboard picker (up to Android 9.0)
 
