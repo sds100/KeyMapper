@@ -1,5 +1,30 @@
 --8<-- "go-to-settings.md"
 
+## Dark theme
+Should be self explanatory. 🌚
+
+## Automatically back up mappings
+Tapping this setting will allow to choose a location to automatically back up your mappings to.
+
+## Hide home screen alerts
+This will hide the alerts at the top of the home screen.
+
+## Force vibrate
+This will make all your mappings vibrate when they are triggered
+
+## Show the first 5 characters of the device id for device specific triggers
+Whenever you see the name of a device in Key Mapper like in your triggers, it will append the first 5 characters of the unique identifier for the device at the end of its name. This is useful because some external devices are reported to Android as multiple devices but have the same name.
+
+## Pause/resume mappings notification
+
+This is a useful notification so you can easily pause and resume your key maps.
+
+![](../images/notification-toggle-mappings.png)
+
+## Defaults
+
+These settings allow you to change the defaults for these key map options. For example if the 'long press delay' for a key map is set to 'default' changing this setting will affect that key map.
+
 ## Automatically change the on-screen keyboard when a device connects/disconnects
 
 !!! attention
