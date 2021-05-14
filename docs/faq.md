@@ -122,3 +122,7 @@ That being said, many features should work, such as remapping keyboard buttons.
 Technically yes but it would be a horrendous gaming experience. There is an action in Key Mapper to touch the screen but Key Mapper is only allowed to tap/swipe in one place at a time. Therefore, you wouldn't be able to tap forward on an on-screen joystick and shoot at the same time for example. This is how the Android API works and there is nothing I can do to change it.
 
 [Ask for help :fontawesome-brands-discord:](http://keymapper.club){: .md-button .md-button--primary }
+
+## "Can I remap my Bixby button?"
+
+Key Mapper doesn't yet offer a way to remap the Bixby button but if you are rooted you can remap the Bixby button to something that Key Mapper can remap. Follow this [guide](https://forum.xda-developers.com/t/remap-bixby-manually-using-all-in-one-gestures-bind-to-flashlight-root.3660378/) on XDA.
