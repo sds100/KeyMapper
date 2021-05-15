@@ -1,6 +1,6 @@
-## [2.3.0 Beta 1](https://github.com/sds100/KeyMapper/releases/tag/v2.3.0-beta.01)
+## [2.3.0]
 
-#### 15 May 2021
+#### In Beta
 
 - A huge rewrite of the code which should make the app more stable and easier to add features in the future.
 
