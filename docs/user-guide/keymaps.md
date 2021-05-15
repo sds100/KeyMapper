@@ -86,6 +86,9 @@ ___
 --8<-- "action-options/delay-until-repeat.md"
 ___
 
+--8<-- "action-options/repeat-limit.md"
+___
+
 --8<-- "action-options/repeat-behaviour.md"
 
 #### Hold down actions

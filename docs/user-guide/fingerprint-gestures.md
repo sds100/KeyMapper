@@ -54,6 +54,9 @@ ___
 --8<-- "action-options/repeat-every.md"
 ___
 
+--8<-- "action-options/repeat-limit.md"
+___
+
 Tap 'Save' to close the menu, preserving changes.
 
 ## Special options
