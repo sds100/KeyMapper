@@ -84,7 +84,8 @@ This setting needs to be turned on for some features in Key Mapper to work. You 
 Steps to work around this bug...
 
 1. Enable the Key Mapper accessibility service.
-2. --8<-- "go-to-settings.md"
+2. 
+ --8<-- "go-to-settings.md"
 
 3. Scroll down to the 'Workaround for Android 11 bug that sets the device id for input events to -1' setting and turn it on.
 4. **To avoid confusion and headaches** read about how input methods work with Key Mapper [here](key-mapper-keyboard.md).
