@@ -8,4 +8,4 @@ On Android the on-screen keyboard that you see when you want to type something i
     
 **'Enable a Key Mapper keyboard'** means turning on the input method in your device's 'Language & Input' settings. The location of these settings is often called something else.
         
-**'Use/choose a Key Mapper keyboard'** means making the Key Mapper keyboard that you have installed the one that shows up when you want to type something. Multiple ways of doing this are described [here](faq.md#how-do-i-change-the-keyboard). Android allows multiple input methods to be *enabled* but only *one* to be used at a time.
+**'Use/choose a Key Mapper keyboard'** means making the Key Mapper keyboard that you have installed the one that shows up when you want to type something. Multiple ways of doing this are described [here](../faq.md#how-do-i-change-the-keyboard). Android allows multiple input methods to be *enabled* but only *one* to be used at a time.
