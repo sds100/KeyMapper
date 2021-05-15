@@ -1,6 +1,6 @@
-## 2.3.0 (in beta)
+## 2.3.0
 
-#### In Beta
+#### In beta
 
 - A huge rewrite of the code which should make the app more stable and easier to add features in the future.
 
