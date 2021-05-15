@@ -96,7 +96,7 @@ The README, License, Credits, Changelog and Privacy Policy files should just be 
 
 ### Versioning
 
-This project uses semantic versioning. e.g 1.2.3-alpha.1
+This project uses semantic versioning. e.g 1.2.3-alpha.01
 
 - 1st digit: major release. Only incremented when a big enough change happens to the project.
 - 2nd digit: minor releases. Incremented when a new feature or a few are added.
