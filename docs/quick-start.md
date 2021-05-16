@@ -18,7 +18,7 @@ Tapping the FIX button next to the accessibility service prompt will allow you t
 You can then tap Key Mapper in your list of available services. There may be many others on this screen and your interface may be slightly different.
 
 !!! attention
-    If nothing happens when you tap FIX, or if you can't enable the service, see [this page](#) or ask for help in the [Discord server.](http://keymapper.club)
+    If nothing happens when you tap FIX, or if you can't enable the service, see [this page](user-guide/adb-permissions.md#enabling-the-accessibility-service) or ask for help in the [Discord server.](http://keymapper.club)
 
 ![](images/hg-settings-services.png)
 
