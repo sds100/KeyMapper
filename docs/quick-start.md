@@ -59,7 +59,7 @@ In either case, the first step is to record a trigger. Tap the red 'Record trigg
 
 Key Mapper can also create a key map with multiple triggers. If you want to use more than one trigger for one key map, you can press the buttons in the order you will press them to execute the key map. For example, if you wanted to map 'Ctrl' + 'H' to show the device home menu you should press 'Ctrl' and then 'H'.
 
-Key Mapper can also remap fingerprint gestures on many devices. You can learn how to do this [here.](#)
+Key Mapper can also remap fingerprint gestures on many devices. You can learn how to do this [here.](user-guide/fingerprint-gestures.md)
 
 You should see this screen after pressing volume down.
 
@@ -193,11 +193,9 @@ On the Key Mapper home screen, tap the 3 bar :fontawesome-solid-bars: menu to op
 ![](images/hg-general-settings.png) ![](images/hg-general-settings-light.png)
 
 Here you can pause/unpause/enable/disable all of your key maps at once.<br />
-You can also back up and restore key maps here. [Learn more about back up and restore.](#)
+You can also back up and restore key maps here. [Learn more about back up and restore.](user-guide/backup-restore.md)
 
 Tapping 'Show input method picker' allows for switching between a Key Mapper compatible keyboard and any other.<br />
 
 !!! tip
-    Key Mapper can also remap fingerprint gestures on many devices. You can learn how to do this [here.](#)
-
-[Go to top.](#)
+    Key Mapper can also remap fingerprint gestures on many devices. You can learn how to do this [here.](user-guide/fingerprint-gestures.md)
