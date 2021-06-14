@@ -2,12 +2,12 @@ There are many ways to report an issue to the developer. You must attach the fol
 
 ### Required information
 
-- A Key Mapper log. You can read more about this [here](../user-guide/settings/#logging-230). This is only in Key Mapper 2.3.0 and newer.
+- The **whole** Key Mapper version name. This can be found at the top of the About screen in the app. You can navigate to the About screen by opening the menu in the Key Mapper home screen.
+- A Key Mapper log. You can read more about this [here](../user-guide/settings/#logging-230). This is only in Key Mapper 2.3.0 and newer. If you are on an older version then you will have to collect an Android bug report. We have made a [video](https://www.youtube.com/watch?v=2sZ-5Os6_Cs) showing this process.
 
     !!! error "The log is useless if you don't do this step first."
         You must first turn on the Key Mapper setting to 'Enable logging' and then make your issue happen again. Only after your issue has happened again should you continue to copy or attach the log to your report.
 
-- The **whole** Key Mapper version name. This can be found at the top of the About screen in the app. You can navigate to the About screen by opening the menu in the Key Mapper home screen.
 - A backup of all your mappings. There is a button in the Key Mapper home-screen menu to backup everything.
 - Your device name and manufacturer.
 - Your device's Android version which can be found in 'About phone' or 'Software information' in your device's settings.
