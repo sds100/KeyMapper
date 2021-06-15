@@ -46,6 +46,7 @@ There are many actions of this type. They all do something related to your devic
 
 #### Increase/decrease volume stream
 This will increase or decrease a specific one of these volume streams.
+
 - Alarm
 - DTMF
 - Music
