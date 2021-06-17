@@ -123,27 +123,16 @@ There are many apps that can automate broadcasting Intents such as Tasker and Au
 ##### Intent action
 
 ```
-io.github.sds100.keymapper.TRIGGER_KEYMAP_BY_UID
+io.github.sds100.keymapper.ACTION_TRIGGER_KEYMAP_BY_UID
 ```
 
 ##### Intent string extra 
 
 ```
-io.github.sds100.keymapper.KEYMAP_UID
+io.github.sds100.keymapper.EXTRA_KEYMAP_UID
 ```
 
-and the value is the UUID of the key map. You can copy the UUID in Key Mapper by turning on the "Trigger from other apps" option.
-
-##### Intent package (optional but recommended)
-
-```
-io.github.sds100.keymapper
-```
-
-This will only send the Intent to Key Mapper and no other packages.
-
-!!! warning
-    Add `.debug` or `.ci` to the end of all `io.github.sds100.keymapper` instances in the action, extra and package if your Key Mapper build is a debug or ci build respectively.
+The extra value is the UUID of the key map. You can copy the UUID in Key Mapper by turning on the "Trigger from other apps" option.
 
 ---
 
