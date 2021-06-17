@@ -997,20 +997,12 @@ If this is used with the 'repeat' option then this will perform the action this 
 <h4 id="intent">Intent<a class="headerlink" href="#intent" title="Permanent link">&para;</a></h4>
 <p>There are many apps that can automate broadcasting Intents such as Tasker and Automate.</p>
 <h5 id="intent-action">Intent action<a class="headerlink" href="#intent-action" title="Permanent link">&para;</a></h5>
-<div class="highlight"><pre><span></span><code>io.github.sds100.keymapper.TRIGGER_KEYMAP_BY_UID
+<div class="highlight"><pre><span></span><code>io.github.sds100.keymapper.ACTION_TRIGGER_KEYMAP_BY_UID
 </code></pre></div>
 <h5 id="intent-string-extra">Intent string extra<a class="headerlink" href="#intent-string-extra" title="Permanent link">&para;</a></h5>
-<div class="highlight"><pre><span></span><code>io.github.sds100.keymapper.KEYMAP_UID
+<div class="highlight"><pre><span></span><code>io.github.sds100.keymapper.EXTRA_KEYMAP_UID
 </code></pre></div>
-<p>and the value is the UUID of the key map. You can copy the UUID in Key Mapper by turning on the "Trigger from other apps" option.</p>
-<h5 id="intent-package-optional-but-recommended">Intent package (optional but recommended)<a class="headerlink" href="#intent-package-optional-but-recommended" title="Permanent link">&para;</a></h5>
-<div class="highlight"><pre><span></span><code>io.github.sds100.keymapper
-</code></pre></div>
-<p>This will only send the Intent to Key Mapper and no other packages.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Add <code>.debug</code> or <code>.ci</code> to the end of all <code>io.github.sds100.keymapper</code> instances in the action, extra and package if your Key Mapper build is a debug or ci build respectively.</p>
-</div>
+<p>The extra value is the UUID of the key map. You can copy the UUID in Key Mapper by turning on the "Trigger from other apps" option.</p>
 <hr />
 <p><span class="twemoji accent-light"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M400 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zm-204.686-98.059 184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.248-16.379-6.249-22.628 0L184 302.745l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.25 16.379 6.25 22.628.001z"/></svg></span> &nbsp; Show an on-screen message</p>
 <p>When this is turned on, the following notice will come up at the bottom of the screen when ever you trigger your mapping.</p>

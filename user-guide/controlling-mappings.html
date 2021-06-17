@@ -414,6 +414,40 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#intent-api" class="md-nav__link">
+    Intent API
+  </a>
+  
+    <nav class="md-nav" aria-label="Intent API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#action-choose-one" class="md-nav__link">
+    Action (choose one)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#package" class="md-nav__link">
+    Package
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#class" class="md-nav__link">
+    Class
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -517,6 +551,40 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#intent-api" class="md-nav__link">
+    Intent API
+  </a>
+  
+    <nav class="md-nav" aria-label="Intent API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#action-choose-one" class="md-nav__link">
+    Action (choose one)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#package" class="md-nav__link">
+    Package
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#class" class="md-nav__link">
+    Class
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -543,6 +611,22 @@
 <p><img alt="" src="../images/notification-toggle-mappings.png" /></p>
 <h3 id="use-the-quick-settings-tile">Use the quick settings tile<a class="headerlink" href="#use-the-quick-settings-tile" title="Permanent link">&para;</a></h3>
 <p><img alt="" src="../images/pause-keymaps-quick-settings.png" /></p>
+<h3 id="intent-api">Intent API<a class="headerlink" href="#intent-api" title="Permanent link">&para;</a></h3>
+<p>This will allow other apps to pause and resume your mappings by broadcasting an Intent to Key Mapper. The properties for the Intent are shown below</p>
+<h4 id="action-choose-one">Action (choose one)<a class="headerlink" href="#action-choose-one" title="Permanent link">&para;</a></h4>
+<p><div class="highlight"><pre><span></span><code>io.github.sds100.keymapper.ACTION_PAUSE_MAPPINGS
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>io.github.sds100.keymapper.ACTION_RESUME_MAPPINGS
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>io.github.sds100.keymapper.ACTION_TOGGLE_MAPPINGS
+</code></pre></div></p>
+<h4 id="package">Package<a class="headerlink" href="#package" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>io.github.sds100.keymapper
+</code></pre></div>
+<p>Add <code>.debug</code> or <code>.ci</code> to the end of the package name if you are using a debug or ci build of Key Mapper.</p>
+<h4 id="class">Class<a class="headerlink" href="#class" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>io.github.sds100.keymapper.api.PauseMappingsBroadcastReceiver
+</code></pre></div>
                 
               
               
