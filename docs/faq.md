@@ -5,13 +5,13 @@ See the [Quick Start Guide](quick-start.md) for more general help with using Key
 
 No. Here is why:
 
-Joysticks are complicated to remap because they are axes, so their inputs are a range depending on how much you press the stick. It would be a lot of work to integrate them into Key Mapper. The developer currently doesn't have a way to interpret the motion, and if they did, they might not add it into this app anyway because Key Mapper is for mapping keys, not motion.
+Joysticks are complicated to remap because they are axes, so their inputs are a range depending on how much you press the stick. It would be a lot of work to integrate them into Key Mapper. The developer has found a way that might be able to remap them. Therefore, you can consider this a planned feature.
 
-The D-pad is interpreted differently by Android to other keys. That makes it hard to remap. However, the developer has found a way that might be able to remap them. Therefore you can consider this a planned feature. It might take something like 6 months to see this in a build of Key Mapper.
+The D-pad is interpreted differently by Android to other keys. That makes it hard to remap. However, the developer has found a way that might be able to remap them. Therefore, you can consider this a planned feature.
 
 Mouse buttons are not possible to remap with an accessibility service. There will never be support for them in this app. If other apps can do it, they do not work the same way Key Mapper does. If you want to remap mouse buttons, do not use Key Mapper.
 
-Remapping the movement of the mouse is completely out of scope for this app. This is an app for remapping keys, not motion. If you want that kind of functionality, please don't look for it in Key Mapper or request this as a feature. There may be other apps that can help you (I don't know any of them though).
+Remapping the movement of the mouse isn't possible on unrooted Android. The developer doesn't know of a way to do this.
 
 ## "Key Mapper keeps randomly stopping/crashing/bugging/freezing"
 
