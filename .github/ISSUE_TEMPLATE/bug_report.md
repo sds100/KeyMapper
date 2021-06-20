@@ -14,6 +14,8 @@ assignees: sds100
 - [ ] squash and merge
 - [ ] delete branch
 
+**Discord message link/email recipient**
+
 **Describe the bug**
 A clear and concise description of what the bug is.
 
