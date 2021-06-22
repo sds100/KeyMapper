@@ -11,7 +11,7 @@ There are many ways to pause and resume your mappings. These are very useful fea
 
 ![](../images/pause-keymaps-quick-settings.png)
 
-### Intent API
+### Intent API (2.3.0+)
 
 This will allow other apps to pause and resume your mappings by broadcasting an Intent to Key Mapper. The properties for the Intent are shown below
 

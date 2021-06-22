@@ -16,6 +16,7 @@ nav:
       - ADB Permissions: user-guide/adb-permissions.md
       - Setup a Key Mapper keyboard: user-guide/key-mapper-keyboard.md
       - Controlling your mappings: user-guide/controlling-mappings.md
+      - API: user-guide/api.md
   - Contributing: contributing.md
   - Report Issues: report-issues.md
   - Known Issues: known-issues.md
