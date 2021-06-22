@@ -11,6 +11,8 @@
 - Action to show the input method picker by using the Key Mapper keyboard. #531
 - Action to toggle the notification drawer and the quick settings drawer. #242
 - Action to call a phone number. #516
+- A workaround for the Android 11 bug that sets the language of external keyboards to English-US when an accessibility service is enabled. #618 Read the guide here https://docs.keymapper.club/redirects/android-11-device-id-bug-work-around
+
 - Prompt the user to read the quick start guide on the website the first time the app is opened. #544
 - Links to a relevant online guide in each screen in the app. #539
 - Option in key event action to input the key event through the shell. #559
@@ -18,7 +20,6 @@
 - Data migrations when restoring from backups. #574
 - Enable hold down and disable repeat by default for modifier key actions. #579
 - Ability to change the input method with the accessibility service on Android 11+. #619
-- A workaround for the Android 11 bug that sets the language of external keyboards to English-US when an accessibility service is enabled. #618
 - Make it clearer that selecting a screenshot to set up a tap coordinate action is optional. #632
 - Show a prompt to install the Key Mapper GUI Keyboard when a key event action is created. #645
 - Back up default key map settings in back ups. #659 
