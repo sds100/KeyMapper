@@ -69,7 +69,7 @@ markdown_extensions:
 plugins:
   - redirects:
       redirect_maps:
-        'redirects/trigger-by-intent.md': 'https://sds100.github.io/KeyMapper/user-guide/keymaps.html#intent'
+        'redirects/trigger-by-intent.md': 'https://sds100.github.io/KeyMapper/user-guide/keymaps.html#trigger-from-other-apps-230'
         'redirects/grant-write-secure-settings.md': 'https://sds100.github.io/KeyMapper/user-guide/adb-permissions.html#write_secure_settings'
         'redirects/faq.md': 'https://sds100.github.io/KeyMapper/faq'
         'redirects/quick-start.md': 'https://sds100.github.io/KeyMapper/quick-start'
