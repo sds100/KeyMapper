@@ -28,6 +28,10 @@
 - A logging page in the app which can be used instead of bug reports. #651
 - A button in the settings to reset sliders to their default. #589
 - A repeat limit action option. #663
+- Show a dialog before resetting fingerprint gesture maps.
+- A new Key Mapper keyboard that is designed for Android TV. #493
+- An Intent API to pause/resume key maps. #668
+- Allow Key Mapper to be launched from the Android TV launcher. #695
 
 ### Changed
 - Move action option to show a toast message to the same place as the vibrate option. #565
@@ -36,6 +40,7 @@
 - Move option to show the volume ui for an action to when the action is created. #639
 - Tapping the pause/resume key maps notification now opens Key Mapper. #665
 - Make action descriptions more descriptive when repeat is turned on. #666
+- Alerts at the top of the home screen have been simplified.
 
 ### Removed
 - Dex slide in the app intro because it didn't work. #646
