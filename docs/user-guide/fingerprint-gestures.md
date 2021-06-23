@@ -57,6 +57,13 @@ ___
 --8<-- "action-options/repeat-limit.md"
 ___
 
+<sup><sub>&nbsp;Stop repeating when...</sup></sub><br />
+&nbsp;&nbsp;&nbsp;:radiobox-marked:{: .accent-light } <sup><sub>Swiped again</sup></sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:radiobox-marked:{: .accent-light } <sup><sub>Limit reached</sup></sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+- **Swiped again**. Swiping the fingerprint reader once will be sufficient to start your repeating key map. To stop the key map, you will need to swipe a second time.
+
+- **Limit reached**. (Key Mapper 2.3.0+). Your key map will stop repeating once the limit has been reached.
+
 Tap 'Save' to close the menu, preserving changes.
 
 ## Special options
