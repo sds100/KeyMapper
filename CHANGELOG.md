@@ -1,3 +1,15 @@
+## [2.3.0 Beta 2](https://github.com/sds100/KeyMapper/releases/tag/v2.3.0-beta.02) 
+
+#### 25 June 2021
+
+### Added
+- Support for repeat until limit reached action option in fingerprint gesture maps. #710
+
+### Bug Fixes
+- Crash on start up on some devices. #706
+- Notification advertising fingerprint gesture maps is shown on every update #709
+- Key map launcher shortcut repeats indefinitely when triggered if repeat until released is chosen. #707
+
 ## [2.3.0 Beta 1](https://github.com/sds100/KeyMapper/releases/tag/v2.3.0-beta.01) 
 
 #### 22 June 2021
