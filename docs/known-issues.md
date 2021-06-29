@@ -1,3 +1,17 @@
+## Key Mapper randomly stops
+
+Key Mapper has been killed while it has been in the background. You must read **ALL** of this so that the problem can be solved super quickly. If you go to the developer without reading this then they will show you this same text again so **READ** it now! 🙂
+
+Here is how to fix it:
+
+1. Many phone manufacturers (especially Xiaomi and Huawei) love to kill apps when they are running in the background. This is **NOT** the developer's fault and there is nothing they can do to fix it so don't leave a bad review when this happens. **YOU** might be able to fix it by turning off these app killing "features". Follow the amazing online guide at https://dontkillmyapp.com that shows you how to *hopefully* turn all this off.
+
+2. Turn the accessibility service off and on again and try to use Key Mapper like normal.
+
+3. You must **not** do the rest of these steps if this is the first time that you have completed step 1.
+
+4. In some **very rare** cases there is a bug in Key Mapper that causes it to crash while it is running in the background. You will need to send a bug report so that the developer can investigate the issue. Tap "Report bug" in Key Mapper's home screen menu.
+
 ## Volume increases to max/minimum when pressing power and the respective volume button when the device is off
 
 This seems to be a bug with accessibility services on Android Pie+ on some devices. It also happens with the Macrodroid app when you only enable their accessibility service which filters key events. I tested Key Mapper with no code in the onKeyEvent function in the accessibility service and it still happens. These are the devices that I've tested.
