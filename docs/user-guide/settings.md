@@ -105,12 +105,18 @@ Steps to work around this bug...
 
 This is very useful for debugging and can be used instead of a bug report. Read about how to send this information to the developer [here](../report-issues.md). Some things like app crashes always save to the log regardless of whether extra logging is turned on.
 
+You can find the button to open the log at the bottom of the Key Mapper settings. This is what it looks like.
+
+![](../images/settings-logging-section.png)
+
 !!! warning
     Extra logging should only be turned on if you are trying to fix an issue or have been told to by the developer otherwise Key Mapper will use more storage space and your key maps might have higher latency. Turn this off once you have fixed the issue or have gathered the information that you need.
 
+Tap on 'View and share log' to be able to see and share the log.
+
 ![](../images/settings-logging-screen.png)
 
-There are buttons to...
+There are buttons at the bottom of the screen to...
 
 - Copy the log to the clipboard.
 - Save the log to a file.
