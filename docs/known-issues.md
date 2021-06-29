@@ -1,10 +1,10 @@
 ## Key Mapper randomly stops
 
-Key Mapper has been killed while it has been in the background. You must read **ALL** of this so that the problem can be solved super quickly. If you go to the developer without reading this then they will show you this same text again so **READ** it now! 🙂
+Key Mapper has been killed while it has been in the background. You must follow these steps so that the problem can be solved super quickly! If you go to the developer without reading this then they will show you this same text again so read it **now**! 🙂
 
 Here is how to fix it:
 
-1. Many phone manufacturers (especially Xiaomi and Huawei) love to kill apps when they are running in the background. This is **NOT** the developer's fault and there is nothing they can do to fix it so don't leave a bad review when this happens. **YOU** might be able to fix it by turning off these app killing "features". Follow the amazing online guide at https://dontkillmyapp.com that shows you how to *hopefully* turn all this off.
+1. Many phone manufacturers (especially Xiaomi and Huawei) love to kill apps when they are running in the background. 😡 This is **not** the developer's fault and there is nothing they can do to fix it so don't leave a bad review when this happens. **You** might be able to fix it by turning off these app killing "features". Follow the amazing online guide at [https://dontkillmyapp.com](https://dontkillmyapp.com) that shows you how to turn this all off.
 
 2. Turn the accessibility service off and on again and try to use Key Mapper like normal.
 
