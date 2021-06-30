@@ -10,4 +10,5 @@ Tab | Description |
 | [Text](../user-guide/actions#text) | Emulate typing a string. |
 | [Intent (2.3.0+)](../user-guide/actions#intent-230) | See [this page.](../user-guide/actions/#intent-230) |
 | [Phone call (2.3.0+)](../user-guide/actions#phone-call-230) | Call a telephone number. Network and carrier rates will apply. |
+| [Sound (2.4.0+)](../user-guide/actions#sound-240) | Play a sound |
 | Unsupported actions | A list of actions that your device won't allow you to use. Android frequently changes what users are allowed to do between versions. |
