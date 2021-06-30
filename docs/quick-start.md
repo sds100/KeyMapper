@@ -1,6 +1,8 @@
 This page aims to give users an introduction to the Key Mapper interface and a demonstration on how to perform typical tasks with the app.
 For specific troubleshooting, [consult the FAQ.](faq.md)
 
+![Visitors](https://visitor-badge.glitch.me/badge?page_id=qsg)
+
 --8<-- "screenshot-version.md"
 
 ## First time setup
