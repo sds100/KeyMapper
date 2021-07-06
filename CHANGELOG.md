@@ -1,4 +1,22 @@
-## [2.3.0 Beta 2](https://github.com/sds100/KeyMapper/releases/tag/v2.3.0-beta.02) 
+## [2.3.0 Beta 3](https://github.com/sds100/KeyMapper/releases/tag/v2.3.0-beta.03)
+
+#### 06 July 2021
+
+### Added
+- Make it much easier to report bugs and turn off aggressive app killing. #728 There is now a button in the home screen menu to send a bug report and the user is now prompted to read dontkillmyapp.com when the accessibility service crashes.
+- Action to play a sound
+
+### Bug Fixes
+- Close notification drawer after the notification has been pressed. #719
+- Crash if couldn't find input device. #730
+- Crash if couldn't find chosen input method. #731
+- Crash when failing to get package info. #721
+- Crash if couldn't find Bluetooth device. #723
+- Crash when disabling accessibility service. #720
+- Reduce memory usage. #725
+- Ensure log doesn't grow forever. #729
+
+## [2.3.0 Beta 2](https://github.com/sds100/KeyMapper/releases/tag/v2.3.0-beta.02)
 
 #### 25 June 2021
 
