@@ -23,3 +23,7 @@ This will restrict your gesture map to work only when the device is set to a spe
     You must [grant Key Mapper root permission](settings.md#key-mapper-has-root-permission) and select the [option](../keymaps#special-options) to detect the key map when the screen is off.
 
 Only allow the key map to be triggered when the screen is on or off.
+
+### Flashlight is on/off (2.4.0+, Android 6.0+)
+
+Your mapping will only work if the front or back flashlight is on/off.
