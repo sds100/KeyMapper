@@ -2,7 +2,7 @@
 
 There are 3 ways to grant this permission.
 
-- Use Shizuku (Key Mapper 2.4.0+ only). This is recommended on all devices running Android 11 and newer. This requires a some setting up. Read the guide [here](shizuku.md).
+- Use Shizuku (Key Mapper 2.4.0+ only). This is recommended on all devices running Android 11 and newer. This requires some setting up. Read the guide [here](shizuku.md).
 
 - If your device is **rooted**, Key Mapper can grant itself these permissions by enabling the "Key Mapper has root permission" toggle in the Key Mapper settings.
 
