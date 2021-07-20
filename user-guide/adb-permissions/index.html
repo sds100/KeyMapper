@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#prepare-adb-android-debug-bridge" class="md-skip">
+        <a href="#write_secure_settings" class="md-skip">
           Skip to content
         </a>
       
@@ -372,13 +372,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#prepare-adb-android-debug-bridge" class="md-nav__link">
-    Prepare ADB (Android Debug Bridge)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#write_secure_settings" class="md-nav__link">
     WRITE_SECURE_SETTINGS
   </a>
@@ -388,6 +381,13 @@
         <li class="md-nav__item">
   <a href="#enabling-the-accessibility-service" class="md-nav__link">
     Enabling the Accessibility Service
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prepare-adb-android-debug-bridge" class="md-nav__link">
+    Prepare ADB (Android Debug Bridge)
   </a>
   
 </li>
@@ -523,13 +523,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#prepare-adb-android-debug-bridge" class="md-nav__link">
-    Prepare ADB (Android Debug Bridge)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#write_secure_settings" class="md-nav__link">
     WRITE_SECURE_SETTINGS
   </a>
@@ -539,6 +532,13 @@
         <li class="md-nav__item">
   <a href="#enabling-the-accessibility-service" class="md-nav__link">
     Enabling the Accessibility Service
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prepare-adb-android-debug-bridge" class="md-nav__link">
+    Prepare ADB (Android Debug Bridge)
   </a>
   
 </li>
@@ -562,8 +562,47 @@
                 
                   <h1>ADB Permissions</h1>
                 
-                <p>If your device is <strong>rooted</strong>, Key Mapper can grant itself these permissions by enabling the "Key Mapper has root permissions" toggle in the settings.</p>
-<p>If your device is <strong>not rooted</strong> you must do the following.</p>
+                <h2 id="write_secure_settings">WRITE_SECURE_SETTINGS<a class="headerlink" href="#write_secure_settings" title="Permanent link">&para;</a></h2>
+<p>There are 3 ways to grant this permission.</p>
+<ul>
+<li>
+<p>Use Shizuku (Key Mapper 2.4.0+ only). This is recommended on all devices running Android 11 and newer. This requires a some setting up. Read the guide <a href="../shizuku/">here</a>.</p>
+</li>
+<li>
+<p>If your device is <strong>rooted</strong>, Key Mapper can grant itself these permissions by enabling the "Key Mapper has root permission" toggle in the Key Mapper settings.</p>
+</li>
+<li>
+<p>If your device is <strong>not rooted</strong> and you don't want to use Shizuku you must do the following...</p>
+<ol>
+<li>
+<p>Follow the "Prepare ADB" guide at the bottom of this page.</p>
+</li>
+<li>
+<p>Type or paste in a terminal:</p>
+</li>
+</ol>
+<div class="highlight"><pre><span></span><code>adb shell pm grant io.github.sds100.keymapper android.permission.WRITE_SECURE_SETTINGS
+</code></pre></div>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>For CI builds (the app icon with a green square) the package name is <code>io.github.sds100.keymapper.ci</code>.
+For Debug builds (the app icon with a yellow square) the package name is <code>io.github.sds100.keymapper.debug</code>.</p>
+</div>
+<p>These permissions persist across reboots but need to be granted again if the app is reinstalled.</p>
+</li>
+</ul>
+<h2 id="enabling-the-accessibility-service">Enabling the Accessibility Service<a class="headerlink" href="#enabling-the-accessibility-service" title="Permanent link">&para;</a></h2>
+<p>You may wish to enable Key Mapper's accessibility service using ADB if you cannot do so in-app due to manufacturer constraints.</p>
+<ol>
+<li>
+<p>Follow the "Prepare ADB" guide at the bottom of this page.</p>
+</li>
+<li>
+<p>To add Key Mapper to the List of the enabled accessibility providers, type or paste in a terminal:</p>
+<div class="highlight"><pre><span></span><code>adb shell settings put secure enabled_accessibility_services io.github.sds100.keymapper/io.github.sds100.keymapper.service.MyAccessibilityService
+</code></pre></div>
+</li>
+</ol>
 <h2 id="prepare-adb-android-debug-bridge">Prepare ADB (Android Debug Bridge)<a class="headerlink" href="#prepare-adb-android-debug-bridge" title="Permanent link">&para;</a></h2>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -601,22 +640,6 @@
 </details>
 </li>
 </ol>
-<h2 id="write_secure_settings">WRITE_SECURE_SETTINGS<a class="headerlink" href="#write_secure_settings" title="Permanent link">&para;</a></h2>
-<p>If you need more features of Key Mapper, you may grant the app permission to modify the secure settings on your device.</p>
-<p>Type or paste in a terminal:</p>
-<div class="highlight"><pre><span></span><code>adb shell pm grant io.github.sds100.keymapper android.permission.WRITE_SECURE_SETTINGS
-</code></pre></div>
-<div class="admonition attention">
-<p class="admonition-title">Attention</p>
-<p>For CI builds (the app icon with a green square) the package name is <code>io.github.sds100.keymapper.ci</code>.
-For Debug builds (the app icon with a yellow square) the package name is <code>io.github.sds100.keymapper.debug</code>.</p>
-</div>
-<p>More features which rely on this set of permission will come in the future. These permissions persist across reboots but need to be granted again if the app is reinstalled.</p>
-<h2 id="enabling-the-accessibility-service">Enabling the Accessibility Service<a class="headerlink" href="#enabling-the-accessibility-service" title="Permanent link">&para;</a></h2>
-<p>You may wish to enable Key Mapper's accessibility service using ADB if you cannot do so in-app due to manufacturer constraints.</p>
-<p>To add Key Mapper to the List of the enabled accessibility providers, type or paste in a terminal:</p>
-<div class="highlight"><pre><span></span><code>adb shell settings put secure enabled_accessibility_services io.github.sds100.keymapper/io.github.sds100.keymapper.service.MyAccessibilityService
-</code></pre></div>
                 
               
               
