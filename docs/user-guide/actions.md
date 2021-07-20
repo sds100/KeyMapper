@@ -8,7 +8,7 @@ Launch an app shortcut. This is a great way to add more functionality to Key Map
 
 ## Key code
 
---8<-- "requires-key-mapper-keyboard.md"
+--8<-- "requires-key-mapper-keyboard-or-shizuku.md"
 
 Input a simple key event with this key code.
 
@@ -27,7 +27,7 @@ This will tap a point on your screen.
 
 ## Key event (2.1.0+)
 
---8<-- "requires-key-mapper-keyboard.md"
+--8<-- "requires-key-mapper-keyboard-or-shizuku.md"
 
 This will input a more complicated key event than the simple key code action.
 
