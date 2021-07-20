@@ -2,7 +2,7 @@ You can create and restore backups of any of your mappings in Key Mapper.
 
 This menu will be referred to frequently in this guide.
 
-![](../images/hg-general-settings.png) ![](../images/hg-general-settings-light.png)
+![](../images/home-menu.png)
 
 ## Automatically back up mappings
 
