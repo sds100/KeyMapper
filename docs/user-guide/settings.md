@@ -21,9 +21,13 @@ This is a useful notification so you can easily pause and resume your key maps.
 
 ![](../images/notification-toggle-mappings.png)
 
-## Defaults
+## Default mapping options
 
 These settings allow you to change the defaults for these key map options. For example if the 'long press delay' for a key map is set to 'default' changing this setting will affect that key map.
+
+## Delete sound files
+
+Tapping this will let you delete sound files that are being used by sound actions.
 
 ## Automatically change the on-screen keyboard when a device connects/disconnects
 
