@@ -1,6 +1,38 @@
-If your device is **rooted**, Key Mapper can grant itself these permissions by enabling the "Key Mapper has root permissions" toggle in the settings.
+## WRITE_SECURE_SETTINGS
 
-If your device is **not rooted** you must do the following.
+There are 3 ways to grant this permission.
+
+- Use Shizuku (Key Mapper 2.4.0+ only). This is recommended on all devices running Android 11 and newer. This requires a some setting up. Read the guide [here](shizuku.md).
+
+- If your device is **rooted**, Key Mapper can grant itself these permissions by enabling the "Key Mapper has root permission" toggle in the Key Mapper settings.
+
+- If your device is **not rooted** and you don't want to use Shizuku you must do the following...
+
+    1. Follow the "Prepare ADB" guide at the bottom of this page.
+    
+    2. Type or paste in a terminal:
+    
+    ```
+    adb shell pm grant io.github.sds100.keymapper android.permission.WRITE_SECURE_SETTINGS
+    ```
+    
+    !!! attention
+        For CI builds (the app icon with a green square) the package name is `io.github.sds100.keymapper.ci`.
+        For Debug builds (the app icon with a yellow square) the package name is `io.github.sds100.keymapper.debug`.
+
+    These permissions persist across reboots but need to be granted again if the app is reinstalled.
+
+## Enabling the Accessibility Service
+
+You may wish to enable Key Mapper's accessibility service using ADB if you cannot do so in-app due to manufacturer constraints.
+
+1. Follow the "Prepare ADB" guide at the bottom of this page.
+
+2. To add Key Mapper to the List of the enabled accessibility providers, type or paste in a terminal:
+
+    ```
+    adb shell settings put secure enabled_accessibility_services io.github.sds100.keymapper/io.github.sds100.keymapper.service.MyAccessibilityService
+    ```
 
 ## Prepare ADB (Android Debug Bridge)
 
@@ -35,29 +67,3 @@ If your device is **not rooted** you must do the following.
         ![](../images/command-prompt-adb-devices-no-devices.png)
         ![](../images/command-prompt-adb-devices-offline.png)
         ![](../images/command-prompt-adb-devices-unauthorized.png)
-
-## WRITE_SECURE_SETTINGS
-
-If you need more features of Key Mapper, you may grant the app permission to modify the secure settings on your device.
-
-Type or paste in a terminal:
-
-```
-adb shell pm grant io.github.sds100.keymapper android.permission.WRITE_SECURE_SETTINGS
-```
-
-!!! attention
-    For CI builds (the app icon with a green square) the package name is `io.github.sds100.keymapper.ci`.
-    For Debug builds (the app icon with a yellow square) the package name is `io.github.sds100.keymapper.debug`.
-
-More features which rely on this set of permission will come in the future. These permissions persist across reboots but need to be granted again if the app is reinstalled.
-
-## Enabling the Accessibility Service
-
-You may wish to enable Key Mapper's accessibility service using ADB if you cannot do so in-app due to manufacturer constraints.
-
-To add Key Mapper to the List of the enabled accessibility providers, type or paste in a terminal:
-
-```
-adb shell settings put secure enabled_accessibility_services io.github.sds100.keymapper/io.github.sds100.keymapper.service.MyAccessibilityService
-```
