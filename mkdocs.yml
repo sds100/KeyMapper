@@ -88,7 +88,7 @@ plugins:
         'redirects/settings.md': 'https://sds100.github.io/KeyMapper/user-guide/settings'
         'redirects/report-issues.md': 'https://sds100.github.io/KeyMapper/report-issues'
         'redirects/fix-optimisation.md': 'https://sds100.github.io/KeyMapper/known-issues.html#key-mapper-randomly-stops'
-        'redirects/shizuku-support.md': 'https://sds100.github.io/KeyMapper/user-guide/shizuku'
+        'redirects/shizuku-benefits.md': 'https://sds100.github.io/KeyMapper/user-guide/shizuku#benefits'
   - search:
       lang:
         - en

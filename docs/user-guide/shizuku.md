@@ -1,8 +1,9 @@
 Shizuku is an app that allows other apps to do things that only system apps are allowed to do. This is not the same as rooting, which gives apps and the user ultimate control over the device. Read more about how it works on their [website](https://shizuku.rikka.app/introduction).
 
-You can set this up by going to the Key Mapper settings -> Shizuku support,
+## How to set it up
+Go to the Key Mapper settings -> Shizuku support.
 
-These are the benefits of using Shizuku with Key Mapper:
+## Benefits
 
 - Input key events without having to use one of the Key Mapper keyboards. 🥳 You can use the keyboard that you already have such as Gboard for example.
 
