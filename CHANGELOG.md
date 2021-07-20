@@ -1,3 +1,17 @@
+## [2.3.0 Beta 4](https://github.com/sds100/KeyMapper/releases/tag/v2.3.0-beta.04)
+
+#### 19 July 2021
+
+### Changes
+- Don't show "key mapper has crashed" dialog the first time the app detects it has been crashed after being opened.
+
+### Bug Fixes
+
+- Write Secure Settings section in settings is enabled even if permission is revoked. #732
+- Many random crashes. #744, #743, #742, #741, #740, #738, #737
+- Don't crash when restoring back ups without a sounds folder in it.
+- Don't restore a back up from a newer version of key mapper to prevent the app crashing when reading the restored data.
+
 ## [2.3.0 Beta 3](https://github.com/sds100/KeyMapper/releases/tag/v2.3.0-beta.03)
 
 #### 06 July 2021
