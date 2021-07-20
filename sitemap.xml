@@ -46,6 +46,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.keymapper.club/includes/requires-key-mapper-keyboard-or-shizuku/</loc>
+         <lastmod>2021-07-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.keymapper.club/includes/requires-key-mapper-keyboard/</loc>
          <lastmod>2021-07-20</lastmod>
          <changefreq>daily</changefreq>
