@@ -29,6 +29,10 @@ These settings allow you to change the defaults for these key map options. For e
 
 Tapping this will let you delete sound files that are being used by sound actions.
 
+## Shizuku support
+
+Read more about this [here](shizuku.md).
+
 ## Automatically change the on-screen keyboard when a device connects/disconnects
 
 !!! attention

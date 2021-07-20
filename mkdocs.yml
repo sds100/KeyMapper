@@ -14,10 +14,11 @@ nav:
       - Actions: user-guide/actions.md
       - Constraints: user-guide/constraints.md
       - Settings: user-guide/settings.md
-      - Back up and Restore (2.1.0+, Android 4.4+): user-guide/backup-restore.md
+      - Back up and Restore (2.1.0+): user-guide/backup-restore.md
       - ADB Permissions: user-guide/adb-permissions.md
       - Setup a Key Mapper keyboard: user-guide/key-mapper-keyboard.md
       - Controlling your mappings: user-guide/controlling-mappings.md
+      - Shizuku support (2.4.0+, Android 6.0+): user-guide/shizuku.md
       - API: user-guide/api.md
   - Contributing: contributing.md
   - Report Issues: report-issues.md
@@ -87,6 +88,7 @@ plugins:
         'redirects/settings.md': 'https://sds100.github.io/KeyMapper/user-guide/settings'
         'redirects/report-issues.md': 'https://sds100.github.io/KeyMapper/report-issues'
         'redirects/fix-optimisation.md': 'https://sds100.github.io/KeyMapper/known-issues.html#key-mapper-randomly-stops'
+        'redirects/shizuku-support.md': 'https://sds100.github.io/KeyMapper/user-guide/shizuku'
   - search:
       lang:
         - en
