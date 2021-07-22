@@ -6,6 +6,7 @@ Go to the Key Mapper settings -> Shizuku support.
 ## Benefits
 
 - Input key events without having to use one of the Key Mapper keyboards. 🥳 You can use the keyboard that you already have such as Gboard for example.
+- "Move cursor to end" action without having to use one of the Key Mapper keyboards.
 
 More will come in the future. If you want any more features then contact the developer by using one of the social media links at the bottom of the page.
 
