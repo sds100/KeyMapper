@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="200" height="auto" src="https://sds100.github.io/KeyMapper/images/logo.png">
+  <img width="200" height="auto" src="https://github.com/sds100/KeyMapper/blob/master/app/src/main/ic_launcher-web.png">
   <br/>
   
 Key Mapper is a free and open source Android app that can remap your buttons and fingerprint reader gestures. The aim of this project is to allow anyone to map their buttons in any combination to anything.
