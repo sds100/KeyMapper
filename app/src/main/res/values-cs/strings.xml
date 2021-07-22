@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="no_action_chosen">Žádná akce nebyla vybrána</string>
+    <string name="accessibility_service_description">Key Mapper musí používat službu usnadnění přístupu, aby mohl poslouchat stisknutí tlačítek / kláves a provádět akce, které jste vybrali. Služba přístupnosti poslouchá pouze klíčové události a zjišťuje, ve které aplikaci se nacházíte. Můžete se podívat na zdrojový kód, který je propojen na obrazovce O aplikaci, abyste to ověřili.</string>
+    <string name="selection_count">%d vybráno</string>
+    <string name="enable">Umožnit</string>
+    <string name="open">Otevřít</string>
+    <string name="recyclerview_placeholder">\n\nTady nic není!</string>
+    <string name="triggers_recyclerview_placeholder">Nahrajte spoušť!</string>
+    <string name="actions_recyclerview_placeholder">Přidej akci!</string>
+    <string name="keymap_recyclerview_placeholder">\n\n Vytvořte novou klíčovou mapu!</string>
+    <string name="action_shortcut_list_recyclerview_placeholder">\n\n Nevybrali jste žádnou akci pro tuhle zkratku!</string>
+    <string name="no_key_maps">Nevytvořili jste žádnou klíčovou mapu!</string>
+    <string name="everything_looks_good">Všechno vypadá dobře!</string>
+    <string name="warning_the_app_will_work">Aplikace bude fungovat, ale některé věci budou muset být opraveny v závislosti na tom, co děláte.</string>
+    <string name="your_device_doesnt_support_some_actions">Vaše zařízení nepodporuje tyto akce.</string>
+    <string name="tab_unsupported_actions">Nepodporované akce</string>
+    <string name="requires_root">Vyžaduje root</string>
+    <string name="press_dot_dot_dot">Stiskněte…</string>
+    <string name="no_actions">Žádné akce</string>
+    <string name="no_trigger">Žádný spouštěč</string>
+    <string name="unknown_keycode">Neznámý kód klíče: %s</string>
+    <string name="on">Zapnuto</string>
+    <string name="off">Vypnuto</string>
+    <string name="follow_system">Sledovat systém</string>
+    <string name="this_device">Toto zařízení</string>
+    <string name="any_device">Jakékoliv zařízení</string>
+    <string name="trigger_device_name_not_found">Název tohoto zařízení není znám</string>
+    <string name="slider_default">Výchozí</string>
+    <string name="button_enable_accessibility_service">Povolit službu usnadnění přístupu</string>
+    <string name="show_hidden_apps">Zobrazit skryté aplikace</string>
+    <string name="modifiers">Modifikátory</string>
+    <string name="toggle">Přepnout</string>
+    <string name="tap_coordinate_screenshot_message">DŮLEŽITÉ!!! Tyto souřadnice jsou správné pouze tehdy, když je obrazovka ve stejné orientaci jako snímek obrazovky! Tato akce zruší všechna gesta, která na obrazovce děláte.\n\nPokud potřebujete pomoci najít souřadnice bodu na obrazovce, pořídí snímek obrazovky a klepněte na snímek obrazovky, kde chcete tuto akci stisknout.</string>
+    <string name="dont_know_device_name">Neznám jméno zařízení!</string>
+    <string name="tap_actions_to_fix">Klepnutím na akce opravíte!</string>
+    <string name="shortcut_label_action">Provést akce</string>
+    <string name="hold_down_until_trigger_is_dot_dot_dot">Podržte dokud není spouštěč…</string>
+    <string name="from_no_device">Žádné zařízení</string>
+    <string name="intent_extras_recycler_view_placeholder">&lt;unk&gt; \\_(&lt;unk&gt;)_/ &lt;unk&gt;\n\nŽádné extrakce!</string>
+    <string name="content_description_fab_new_keymap">Vytvořit novou mapu klíče</string>
+    <string name="whats_new">Co je nového</string>
+    <string name="caption_action_type_key">Klikněte na klávesu na zařízení, kterou chcete vložit.
+            \n\nDŮLEŽITÉ!
+            Přidání tohoto klíče jako akce bude fungovat pouze v případě, že používáte klávesovou mapu kompatibilní s klávesou.</string>
+    <string name="caption_action_type_keycode">DŮLEŽITÉ!
+            Vložením tohoto klíče jako akce bude fungovat pouze v případě, že používáte kompatibilní klávesnici klávesové mapy.</string>
+    <string name="caption_action_type_text">Zadejte text, který chcete vložit, když provedete tuto akci.</string>
+    <string name="caption_action_type_phone_call">Zadejte telefonní číslo.</string>
+    <string name="caption_action_type_url">Zadejte URL, kterou chcete otevřít. Není vyžadováno http://, https://, https://// nebo www.</string>
+    <string name="caption_no_paired_bt_devices">Nelze najít žádná spárovaná zařízení. Je Bluetooth zapnuto?</string>
+    <string name="caption_create_keymap_shortcut">Volba \"spouštěč z jiných aplikací\" bude zapnuta pro klíčovou mapu, kterou vyberete, pokud již není aktivní. Pokud tuto možnost později vypnete, žádné zkratky nebo záměry spustit tuto klávesovou mapu nebudou fungovat.</string>
+    <string name="switch_enabled">Povoleno</string>
+    <string name="disabled">Zakázáno</string>
+    <string name="reset">Reset</string>
+    <string name="action_title_wait">Počkejte %sms</string>
+    <string name="action_title_intent_start_activity">Počáteční aktivita: %s</string>
+    <string name="action_title_intent_start_service">Spustit službu: %s</string>
+    <string name="action_title_intent_send_broadcast">Odeslat všesměrové vysílání: %s</string>
+    <string name="clipboard_label_keymap_uid">Klíčová mapa UUID</string>
+    <string name="check_box_key_event_option_use_shell">Použít shell (pouze ROOT)</string>
+    <!--  Action descriptions  -->
+    <string name="description_open_app">Otevřít %s</string>
+    <string name="description_key">Stiskněte klávesu %s</string>
+    <string name="description_text_block">Zadejte %s</string>
+    <string name="description_keyevent">Vstup %s%s</string>
+    <string name="description_keyevent_from_device">Vstup %s%s z %s</string>
+    <string name="description_url">Otevřít %s</string>
+    <string name="description_phone_call">Volání %s</string>
+    <!--  Action descriptions  -->
+    <!--  Headers  -->
+    <string name="option_list_header">Možnosti</string>
+    <string name="action_list_header">Akce</string>
+    <string name="trigger_header">Aktivační událost</string>
+    <string name="constraint_list_header">Omezení</string>
+    <string name="header_fingerprint_gesture_up">Přejeďte prstem nahoru</string>
+    <string name="header_fingerprint_gesture_down">Přejeďte prstem dolů</string>
+    <string name="header_fingerprint_gesture_left">Přejeďte doleva</string>
+    <string name="header_fingerprint_gesture_right">Přejeďte doprava</string>
+    <string name="header_click_type">Klikněte na typ</string>
+    <!--  Headers  -->
+    <!--  Hints  -->
+    <!--  Hints  -->
+    <!--  Radio buttons  -->
+    <string name="radio_button_intent_target_activity">Aktivita</string>
+    <string name="radio_button_intent_target_service">Servis</string>
+    <string name="radio_button_intent_target_broadcast_receiver">Vysílací přijímač</string>
+    <!--  Radio buttons  -->
+    <!--  Tabs  -->
+    <string name="tab_trigger_and_actions">Spouštěč a akce</string>
+    <string name="tab_constraints_and_more">Omezení a více</string>
+    <string name="tab_options">Možnosti</string>
+    <string name="tab_constraints">Omezení</string>
+    <string name="tab_actions">Akce</string>
+    <string name="tab_trigger">Spouštěč</string>
+    <string name="tab_fingerprint">Otisk prstu</string>
+    <string-array name="home_tab_titles">
+        <item>@string/tab_keyevents</item>
+        <item>\@řetězec/tab_otisk</item>
+    </string-array>
+    <!--  Tabs  -->
+    <!--  Navigation argument ids  -->
+    <!--  Navigation argument ids  -->
+    <!--  Toasts  -->
+    <string name="toast_chose_keyboard">Vybrat %s</string>
+    <string name="toast_backup_successful">Záloha byla úspěšná!</string>
+    <string name="toast_restore_successful">Obnovení bylo úspěšné!</string>
+    <string name="toast_automatic_backup_successful">Automatická záloha úspěšná!</string>
+    <string name="toast_screenshot_taken">Snímek obrazovky pořízen</string>
+    <string name="toast_io_exception_shrug">IO výjimka &lt;unk&gt; \\_(&lt;unk&gt;)_/ &lt;unk&gt;</string>
+    <string name="toast_incorrect_screenshot_resolution">Rozlišení snímku neodpovídá rozlišení tohoto zařízení!</string>
+    <string name="toast_copied_keymap_uid_to_clipboard">UUID klíče zkopírováno do schránky</string>
+    <!--  Toasts  -->
+    <!-- Extra labels -->
+    <string name="extra_label_sequence_trigger_timeout">Časový limit spouštění sekvence (ms)</string>
+    <string name="extra_label_long_press_delay_timeout">Prodleva dlouhého stisku (ms)</string>
+    <string name="extra_label_double_press_delay_timeout">Časový limit dvojitého stisku (ms)</string>
+    <string name="extra_label_repeat_delay">Zpoždění do opakování (ms)</string>
+    <string name="extra_label_repeat_rate">Opakovat každých… (ms)</string>
+    <string name="extra_label_vibration_duration">Trvání vibrací (ms)</string>
+    <!-- Extra labels -->
+    <!-- Constraints -->
+    <!-- Constraints -->
+    <!-- Click types -->
+    <!-- Click types -->
+    <!-- URLs -->
+    <!-- URLs -->
+    <!-- Activity titles -->
+    <!-- Activity titles -->
+    <!--  Bug report slides-->
+    <!--  Bug report slides-->
+    <!-- Menu action titles-->
+    <!-- Menu action titles-->
+    <!-- Button titles -->
+    <!-- Button titles -->
+    <!-- Dialog stuff -->
+    <!-- Dialog stuff -->
+    <!-- Notification strings -->
+    <!--  remove accessibility from the word because the other notification buttons arent visible on small screens  -->
+    <!-- Notification strings -->
+    <!--Preference titles and summaries-->
+    <!--Preference titles and summaries-->
+    <!--Preference categories-->
+    <!--Preference categories-->
+    <!-- About activity-->
+    <!-- About activity-->
+    <!--Action Types Titles-->
+    <!--Action Types Titles-->
+    <!--flags-->
+    <!--flags-->
+    <!-- Showcase -->
+    <!-- Showcase -->
+    <!-- system action options -->
+    <!-- system action options -->
+    <!-- Tiles -->
+    <!-- Tiles -->
+    <!-- Meta States -->
+    <!-- Meta States -->
+    <!-- Error messages -->
+    <!-- Error messages -->
+    <!-- System action labels -->
+    <!-- System action labels -->
+    <!-- System action category labels -->
+    <!-- System action category labels -->
+    <!--  Intent action type strings  -->
+    <!--  Intent action type strings  -->
+    <!--  Tap targets  -->
+    <!--  Tap targets  -->
+</resources>
