@@ -12,10 +12,9 @@ Many thanks to...
  - @[srikanth-lingala](https://github.com/srikanth-lingala) for their Java zip file [library](https://github.com/srikanth-lingala/zip4j).
  - @[anggrayudi](https://github.com/anggrayudi) for their [Simple Storage](https://github.com/anggrayudi/SimpleStorage) library that makes working with Scoped Storage and the Storage Access Framework on Android much easier.
  - @[MFlisar](https://github.com/MFlisar) for their [drag and select](https://github.com/MFlisar/DragSelectRecyclerView) library.
+ - @[RikkaApps](https://github.com/RikkaApps) for Shizuku! It is amazing.
 
 [salomonbrys]: https://github.com/salomonbrys
 [Kotson]: https://github.com/salomonbrys/Kotson
-
 [Material Design Icons]: https://materialdesignicons.com/
-
 [App Mockup]: https://app-mockup.com/
